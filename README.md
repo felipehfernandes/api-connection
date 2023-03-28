@@ -7,7 +7,7 @@
 O problema a ser resolvido está relacionado à importação da base de _leads_ da base RD para a base Exact, e são eles:
 
 - **Importação incompleta do número de _leads_**: não foram importados todos os leads para a base Exact, sendo que temos 18197 _leads_ na base Exact e 32346 _leads_ na base RD. Assim, _temos 14149 leads que não foram importados para a base Exact_;
-- **Importação incompleta das informações dos _leads_**: alguns _leads_ não foram importados com todas as informações para a base Exact, mesmo tendo essas informações na base RD. Alguns casos como: ZANON TECNOLOGIA LTDA ME, VIDAM BRASIL AG DE TURISMO E VIAGENS LTDA entre outras.
+- **Importação incompleta das informações dos _leads_**: alguns _leads_ não foram importados com todas as informações para a base Exact, mesmo tendo essas informações na base RD.
 
 ## A Solução
 
@@ -17,14 +17,10 @@ Iremos solucionar esse problema realizando as conexões via API de ambas as base
 
 > Temos **18197 leads** nessa base
 
-> - Login: fernando@absolutasaude.com.br
-> - Senha: 0i9gky32
-
 ### API
 
 - Manual: [Exact Spotter V2 - API v3](https://exactsal.es/apiv3-spotterv2)
 - Chave: https://api.exactspotter.com/v3/Leads
-- Token: 35fc1bd4-7d6e-4f40-bffd-123d2f46054a
 
 #### Limitações
 - Limite de 500 leads por requisição
@@ -39,7 +35,7 @@ import requests
 
 headers = {
     'Content-Type': 'application/json',
-    'token_exact': '35fc1bd4-7d6e-4f40-bffd-123d2f46054a'
+    'token_exact': 'token'
 }
 
 response = requests.get(
@@ -59,17 +55,10 @@ response = requests.get(
 
 > Temos **32346 leads** nessa base
 
-> - Login: luciane@absolutasaude.com.br
-> - Senha: SgAbs76@380
-
-> - Login: f.aspires@hotmail.com
-> - Senha: abs020172
-
 ### API
 
 - Manual: [Developers RD Station](https://developers.rdstation.com/reference/instruções-e-requisitos)
-- Chave: https://crm.rdstation.com/api/v1/organizations?token=5b67dabde7b4bd01146f3d53
-- Token: 5b67dabde7b4bd01146f3d53, Conta f.aspires: 5b67dabde7b4bd01146f3d52
+- Chave: https://crm.rdstation.com/api/v1/organizations?token=token
 
 #### Limitações
 
@@ -84,7 +73,7 @@ response = requests.get(
 import requests
 
 params = {
-    'token': '5b67dabde7b4bd01146f3d53'
+    'token': 'token'
 }
 
 response = requests.get(
