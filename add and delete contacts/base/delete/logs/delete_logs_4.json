@@ -1,0 +1,84 @@
+[
+    {
+        "get": {
+            "status_code_get": 200,
+            "message_get": [
+                {
+                    "email": "comercial@reservanobrealimentos.com.br",
+                    "name": "Gislaine",
+                    "leadId": 1921204,
+                    "jobTitle": "S\u00f3cia",
+                    "phone1": "5519996361970",
+                    "phone2": null,
+                    "messagingPlatform": null,
+                    "idMessagingPlatform": null,
+                    "mainContact": true,
+                    "id": 1930496
+                },
+                {
+                    "email": null,
+                    "name": "Telefones",
+                    "leadId": 1921204,
+                    "jobTitle": "Telefones Fixo 1 e 2",
+                    "phone1": "5538592640",
+                    "phone2": null,
+                    "messagingPlatform": "Nenhum",
+                    "idMessagingPlatform": null,
+                    "mainContact": false,
+                    "id": 14898542
+                }
+            ]
+        },
+        "delete": {
+            "status_code_delete": 204,
+            "message_delete": "Contact deleted successfully."
+        }
+    },
+    {
+        "get": {
+            "status_code_get": 200,
+            "message_get": [
+                {
+                    "email": null,
+                    "name": "LEANDRO GIMENEZ",
+                    "leadId": 2029510,
+                    "jobTitle": null,
+                    "phone1": "5511996667064",
+                    "phone2": null,
+                    "messagingPlatform": null,
+                    "idMessagingPlatform": null,
+                    "mainContact": true,
+                    "id": 2047494
+                },
+                {
+                    "email": "departamentopessoal@soldin.com.br",
+                    "name": "mirela",
+                    "leadId": 2029510,
+                    "jobTitle": null,
+                    "phone1": null,
+                    "phone2": null,
+                    "messagingPlatform": null,
+                    "idMessagingPlatform": null,
+                    "mainContact": false,
+                    "id": 14840430
+                },
+                {
+                    "email": null,
+                    "name": "Telefones",
+                    "leadId": 2029510,
+                    "jobTitle": "Telefones Fixo 1 e 2",
+                    "phone1": "5538592640",
+                    "phone2": null,
+                    "messagingPlatform": "Nenhum",
+                    "idMessagingPlatform": null,
+                    "mainContact": false,
+                    "id": 14905863
+                }
+            ]
+        },
+        "delete": {
+            "status_code_delete": 204,
+            "message_delete": "Contact deleted successfully."
+        }
+    }
+]
